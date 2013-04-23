@@ -2,7 +2,7 @@
 
 **SimpleTreejs** is a very very simple jQuery plugin (under 400 bytes) that allows you to create "file folder"-like behavior from nested lists. 
 
-There are many other jQuery plugins that create toggleable trees, but I found them to hard to use and too bloated for straightforward use.
+There are many other jQuery plugins that create toggleable trees, but I found them too complex for straightforward use.
 
 ###Usage
 
