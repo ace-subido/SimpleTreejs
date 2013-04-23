@@ -69,9 +69,9 @@
 					<h3>Usage</h3>
 					<pre><code>&lt;div id="sample">
 	&lt;ul class="parent">
-		&lt;li>&lt;a href="#" class="toggle">-&lt;/a> Item 1
+		&lt;li>&lt;a href="#" class="toggle">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a> Item 1
 		    	&lt;ul class="children">
-				&lt;li>&lt;a href="#" class="toggle">-&lt;/a> Item 1 - 1
+				&lt;li>&lt;a href="#" class="toggle">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a> Item 1 - 1
 					&lt;ul class="children">
 						&lt;li>
 							Item 1 - 1 - 3
@@ -81,7 +81,7 @@
 				&lt;li>Item 1 - 2&lt;/li>
 			&lt;/ul>
 		&lt;/li>
-		&lt;li>&lt;a href="#" class="toggle">-&lt;/a> Item 2
+		&lt;li>&lt;a href="#" class="toggle">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a> Item 2
 			&lt;ul class="children">
 				&lt;li>Item 2 - 1&lt;/li>
 				&lt;li>Item 2 - 2&lt;/li>
@@ -110,7 +110,7 @@
 						<ul>
 							<li>The top-most list (<code>ul</code> element) has the <code>parent</code> class</p</li>
 							<li>Make sure that <code>child</code> lists are inside the <code>li</code> elements.</li>
-							<li>If a <code>li</code> element has a child list in it that you wish to toggle - create an <code>a</code> element inside that <code>li</code> element and assign a <code>toggle</code> class in that element. This makes it the toggle for that child list.</li>
+							<li>If a <code>li</code> element has a child list in it that you wish to toggle - create an element inside that <code>li</code> element and assign a <code>toggle</code> class in that element. This makes it the open/close toggle for that child list.</li>
 							<li>Whenever a <code>toggle</code> element is clicked, it is assigned a css class called <code>open</code>. Go crazy on the styles of your toggle.</li>
 						</ul> 
 					</p>				
