@@ -1,0 +1,98 @@
+label,
+input,
+button,
+select,
+textarea {
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;	
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize;
+	color: lighten(@textColor, 10%);
+	.border-radius(0px);
+	height: 26px;
+}
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize;
+	border-color: @lightBorderColor;
+	.box-shadow(none); // Redeclare so transitions work
+	height: 26px;
+	&:focus {
+	  border-color: darken(@lightBorderColor, 20%);
+	  .box-shadow(none);
+	}
+}
+
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input[type=file],
+textarea,
+select {
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize;
+	height: 26px;
+	margin-bottom: 0px;
+}
+
+span.required {
+	color: @colorRed;
+}
+
+label {
+	font-weight: bold;
+}
+
+form div.actions {
+	margin-top: 25px;
+}

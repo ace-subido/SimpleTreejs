@@ -1,0 +1,45 @@
+// border radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.background-size(@property) {
+  -webkit-background-size: @property;
+  -moz-background-size: @property;  
+  background-size: @property;
+}
+
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+// Background clipping
+// Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+.background-clip(@clip) {
+  -webkit-background-clip: @clip;
+     -moz-background-clip: @clip;
+          background-clip: @clip;
+}
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}

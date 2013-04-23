@@ -1,0 +1,109 @@
+.hero {
+	padding: 30px 0px 60px;
+	background: url('../img/carousel.jpeg') repeat center center; 
+	.background-size(cover);
+	border-bottom: 1px solid @textColor;
+	
+	.marketing {
+		margin: 30px -20px 30px -20px;		
+
+		h1, h2, h3, h4, h5, h6 {
+			color: #ffffff;
+			text-align: center;			
+			display: block;
+			margin: 30px auto;
+		}
+
+		h1.headline {			
+			color: #ffffff;
+			font-family: @baseFontFamily;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-size: 46px;
+			line-height: 56px;			
+		}
+
+		p.call-to-action {
+			text-align: center;
+			margin-top: 60px;			
+			float: none;
+		}
+	}
+
+	div.row {
+		margin-bottom: 20px;
+
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.block {
+	padding: 60px 0px;
+
+	&.maps {
+		padding: 0px;
+		margin-bottom: -6px;		
+	}
+}
+
+footer {
+	padding: 30px 0px;
+}
+
+.block {
+	border-bottom: 1px solid @lightBorderColor;
+	
+	h1, h2, h3, h4, h5, h6 {		
+		text-transform: uppercase;		
+		letter-spacing: 1px;		
+		&.headline {
+			text-align: center;	
+			display: block;
+			margin: 10px auto;
+		}
+	}	
+
+	img.highlight {
+		display: block;
+		margin: 0px auto;
+	}
+
+	p.headline-caption {
+		text-align: center;
+		display: block;
+		margin: 10px auto;
+		font-size: @baseFontSize;
+		line-height: @baseLineHeight;
+		color: lighten(@textColor, 10%);
+	}
+
+	div.row {
+		margin-bottom: 50px;
+
+		&:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+
+	&.alt {
+		background-color: @lightBackgroundColor;
+	}
+}
+
+footer {	
+	background-color: @textColor;
+	color: #ffffff;
+
+	.brand {	    
+        font-family: @baseFontFamily;	    
+	    font-size: @baseFontSize + 4;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+	    padding: 0;
+        margin-top: 10px;
+	    margin-left: 0;
+	}
+}
