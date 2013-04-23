@@ -1,11 +1,10 @@
 ###SimpleTreejs
 
-_SimpleTreejs_ is a very very simple jQuery plugin that allows you to create "file folder"-like behavior from nested lists.
-
+**SimpleTreejs** is a very very simple jQuery plugin that allows you to create "file folder"-like behavior from nested lists.
 
 ###Usage
 
-Refer to the [demo website](http://ace-subido.github.io/simpletreejs/)
+Refer to the [demo website](http://ace-subido.github.io/SimpleTreejs/)
 
 ###License
 
