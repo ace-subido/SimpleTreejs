@@ -8,7 +8,8 @@ $.fn.extend({
     var attach;
 
     attach = function(el) {
-      return el.find("ul.parent > li .toggle").click(function() {
+      return el.delegate("ul.parent > li .toggle", "click", function(e) {
+        e.preventDefault();
         $(this).parent().find("ul.child").first().slideToggle({
           duration: 100
         });
