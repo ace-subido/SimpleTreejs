@@ -1,7 +1,6 @@
 @import url('variables.less');
 @import url('mixins.less');
 @import url('typography.less');
-@import url('layout.less');
 @import url('buttons.less');
 @import url('forms.less');
 
@@ -38,13 +37,34 @@ body {
 	width: 1000px;
 }
 
+#sample {
+	ul.parent li,
+	ul.child li {
+		position: relative;
+		list-style-type: none;
+
+		.toggle {
+			position: absolute;
+			left: -18px;
+			.rotate(0deg);
+			.transition(all 0.2s ease);
+			
+			&.closed {
+			  .rotate(90deg);
+			}
+		}
+	}
+
+	
+}
+
 .code {
 	margin-left: 80px;
 	text-shadow: 0px 1px 0px #ffffff;
 
 	code, pre {
-		font-size: 13px;
-		line-height: 21px;
+		font-size: 12px;
+		line-height: 19px;
 		font-family: @baseCodeFamily;
 		padding: 0px;
 		color: darken(@colorRed, 10%);
