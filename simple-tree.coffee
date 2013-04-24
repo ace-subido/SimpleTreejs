@@ -6,10 +6,10 @@ $.fn.extend
    	simpletree: () -> 	
 
    		attach = (el) ->    	
-		   	el.find("ul.parent > li .toggle").click () ->		   		
+		   	el.delegate "ul.parent > li .toggle", "click", (e) ->		   		
+		   		e.preventDefault()
 		   		$(this).parent().find("ul.child").first().slideToggle
 		   			duration: 100
-
 
 	   			if $(this).hasClass "closed"		   			
 	   				$(this).removeClass "closed"
